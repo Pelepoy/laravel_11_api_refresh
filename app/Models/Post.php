@@ -14,4 +14,9 @@ class Post extends Model
         'title',
         'content',
     ];
+
+    protected $hidden = [
+        // 'created_at',
+        // 'updated_at',
+    ];
 }
