@@ -14,4 +14,7 @@ class Post extends Model
         'title',
         'content',
     ];
+
+    protected $hidden = [
+    ];
 }
