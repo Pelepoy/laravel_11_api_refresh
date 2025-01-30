@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f60f8b6e279e6de64f92f6b9fb420141",
+    "content-hash": "560bb4f9b541b6f8b8cba930fcc3af17",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1053,106 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "hi-folks/rando-php",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Hi-Folks/rando-php.git",
+                "reference": "fd1e1421effa441c652f1df25e4a55c934bb6709"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Hi-Folks/rando-php/zipball/fd1e1421effa441c652f1df25e4a55c934bb6709",
+                "reference": "fd1e1421effa441c652f1df25e4a55c934bb6709",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0|^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HiFolks\\RandoPhp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto Butti",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Random generator Library for PHP",
+            "homepage": "https://github.com/hi-folks/rando-php",
+            "keywords": [
+                "draw",
+                "generator",
+                "hi-folks",
+                "library",
+                "rando-php",
+                "random",
+                "sequence"
+            ],
+            "support": {
+                "issues": "https://github.com/Hi-Folks/rando-php/issues",
+                "source": "https://github.com/Hi-Folks/rando-php/tree/v0.2.0"
+            },
+            "time": "2021-07-01T05:48:59+00:00"
+        },
+        {
+            "name": "ichtrojan/laravel-otp",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ichtrojan/laravel-otp.git",
+                "reference": "0c12316ccf6f051cac81d6be418ad6f68689d4b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ichtrojan/laravel-otp/zipball/0c12316ccf6f051cac81d6be418ad6f68689d4b9",
+                "reference": "0c12316ccf6f051cac81d6be418ad6f68689d4b9",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Otp": "Ichtrojan\\Otp\\Otp"
+                    },
+                    "providers": [
+                        "Ichtrojan\\Otp\\OtpServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ichtrojan\\Otp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Okoh",
+                    "email": "michael@okoh.co.uk"
+                }
+            ],
+            "description": "A simple package to generate and validate OTPs",
+            "support": {
+                "issues": "https://github.com/ichtrojan/laravel-otp/issues",
+                "source": "https://github.com/ichtrojan/laravel-otp/tree/v2.0.0"
+            },
+            "time": "2023-12-24T22:16:55+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3361,6 +3461,55 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "sadiqsalau/laravel-otp",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sadiqsalau/laravel-otp.git",
+                "reference": "f322ef85df45a640f787d0c37d0c304a40ab09d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sadiqsalau/laravel-otp/zipball/f322ef85df45a640f787d0c37d0c304a40ab09d9",
+                "reference": "f322ef85df45a640f787d0c37d0c304a40ab09d9",
+                "shasum": ""
+            },
+            "require": {
+                "hi-folks/rando-php": "^0.2.0",
+                "laravel/framework": "^9|^10|^11",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SadiqSalau\\LaravelOtp\\OtpServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SadiqSalau\\LaravelOtp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sadiq Salau",
+                    "email": "sadiqsalau888@gmail.com"
+                }
+            ],
+            "description": "OTP Package for Laravel",
+            "support": {
+                "issues": "https://github.com/sadiqsalau/laravel-otp/issues",
+                "source": "https://github.com/sadiqsalau/laravel-otp/tree/v1.0.6"
+            },
+            "time": "2024-03-20T21:20:33+00:00"
         },
         {
             "name": "symfony/clock",
