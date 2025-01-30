@@ -15,6 +15,9 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
+	Route::get('/user', function(Request $request) {
+		return $request->user();
+	});
 	Route::post('/email-verification', [EmailVerificationController::class, 'email_verification']);
 	Route::get('/resend-otp', [EmailVerificationController::class, 'resend_otp']);
 	Route::post('/logout', [AuthController::class, 'logout']);
