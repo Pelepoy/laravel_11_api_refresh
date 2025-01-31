@@ -17,9 +17,9 @@ class EmailVerificationController extends Controller
         $this->otp = new Otp();
     }
 
-    public function resend_otp()
+    public function resend_otp(Request $request)
     {
-        $user = User::where('email', request('email'))->first();
+        $user = User::where('email', $request->email)->first();
         $otp = $this->otp->generate($user->email, 'numeric', 6, 10);
 
         // Send OTP to user's email

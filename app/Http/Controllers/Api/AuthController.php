@@ -32,7 +32,7 @@ class AuthController extends Controller
         return response()->json([
             'message' => 'Registration Successful. OTP sent to your email.',
             'email' => $user->email,
-            'redirect' => env('APP_URL') . '/api/verify-otp',
+            'redirect' => env('APP_URL') . '/api/email-verification',
             'token' => $token
         ], 201);
     }
