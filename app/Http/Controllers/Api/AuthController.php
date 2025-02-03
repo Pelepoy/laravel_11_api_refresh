@@ -37,28 +37,6 @@ class AuthController extends Controller
         ], 201);
     }
 
-    public function verifyOtp(EmailVerificationRequest $request)
-    {
-        $otpValidation = $this->otp->validate($request->email, $request->token ?? $request->otp);
-
-        // dd($otpValidation);
-
-        if ($otpValidation->status) {
-            // Mark user as verified (optional)
-            $user = User::where('email', $request->email)->first();
-            $user->update(['email_verified_at' => now()]);
-
-            return response()->json([
-                'message' => 'OTP verified successfully.',
-                'user' => $user,
-            ], 200);
-        }
-
-        return response()->json([
-            'message' => 'Invalid or expired OTP.',
-        ], 401);
-    }
-
     public function login(LoginRequest $request)
     {
         $user = User::where('email', $request->email)->first();
